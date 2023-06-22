@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+}
+#sort{
+  position: absolute;
+  right: 150px;
+  width: 200px;
+  height: 50px;
+  margin-left: 100px;
+  border: 3px solid #6ab04c;
+  border-radius: 30px;
+}
+
+option{
+  text-align: center;
+}
+
+.customers {
+  padding: 40px 0;
+  background: #f1f1f1;
+  color: #434343;
+  text-align: center;
+}
+.box{
+  
+  height: 50px;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0, 0 0,o.3);
+}
+
+.box:hover input{
+  width: 400px;
+}
+
+.box input{
+  border-radius: 30px;
+ margin-left: 170px;
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8;
+  background: transparent;
+}
+.box a .fas{
+  color: #6ab04c;
+  font-size: 18px;
+}
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border {
+  width: 160px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.customer {
+  background: #fff;
+  /* padding: 30px; */
+}
+
+.customer img {
+  width: 370px;
+  height: 290px;
+  border-radius: 10px 10px 0 0;
+  /* border-radius: 50%; */
+}
+
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px;
+  text-align: left;
+  
+}
+
+.at {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 20px;
+  text-align: left;
+}
+
+.awsome {
+  color: #6ab04c;
+  font-size: 10px;
+  /* margin-bottom: 20px; */
+  margin: 10px;
+
+  padding-bottom: 10px;
+
+  text-align: justify;
+
+  justify-content: space-between;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+p{
+  /* border: 5px black solid; */
+  display: inline-flex ;
+  margin-left: 10px;
+}
+
+.awsome i {
+  color: #6ab04c;
+  
+}
+
+
+@media screen and (max-width:960px) {
+  .col {
+    flex: 100%;
+    max-width: 80%;
+  }
+
+  .customer img {
+    width: 710px;
+    height: 390px;
+    border-radius: 10px 10px 0 0;
+    /* border-radius: 50%; */
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .customer img {
+    width: 525px;
+    height: 390px;
+    border-radius: 10px 10px 0 0;
+    /* border-radius: 50%; */
+  }
+  .box input{
+    border-radius: 30px;
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8;
+    background: transparent;
+  }
+
+}
